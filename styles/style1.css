@@ -1,0 +1,235 @@
+:root {
+  --secondarycolor: #0d0e23;
+  --primarycolor: #deff7d;
+}
+
+* {
+  font-family: "JetBrains Mono", "sans serif";
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  background-color: var(--secondarycolor);
+  color: #c4e1cd;
+}
+
+.logo {
+  width: 4em;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  margin: 0dvw 3dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul.menu a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #c4e1cd;
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+ul.menu a:hover {
+  background-color: var(--primarycolor);
+  color: var(--secondarycolor);
+}
+
+nav {
+  padding: 5px 40px;
+}
+
+nav button {
+  padding: 1em;
+  border-radius: 1em;
+  border: 3px solid #deff7d;
+  background-color: transparent;
+  font-weight: bold;
+  color: #deff7d;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 90dvh;
+}
+
+.hero-title {
+  margin-right: 2em;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 10dvh;
+}
+
+.hero img {
+  width: 30dvw;
+  height: 30dvw;
+}
+
+.product {
+  text-align: center;
+}
+
+.partner {
+  text-align: center;
+  padding: 40px 0px;
+}
+.partner h2 {
+  margin: 2em;
+}
+
+.partner-companies img {
+  width: 80px;
+  margin: 0dvw 3dvw;
+}
+
+footer {
+  padding: 40px 0px;
+  background-color: var(--primarycolor);
+  display: flex;
+  justify-content: space-around;
+  color: var(--secondarycolor);
+}
+
+.contacts,
+.find-uss {
+  display: flex;
+  gap: 3em;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.products-card {
+  text-align: center;
+  width: 30dvw;
+  height: 30dvw;
+  display: inline-block;
+  padding: 2em;
+}
+
+.products-card img {
+  margin-top: 20px;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-members {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.team-members-card {
+  position: relative;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  width: 20dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--primarycolor);
+  color: var(--secondarycolor);
+  box-shadow: 1px 5px 10px 10px var(--secondarycolor);
+  border: 1px solid var(--secondarycolor);
+  cursor: pointer;
+}
+.team-members-card img {
+  width: 100%;
+  height: 20dvw;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.team-members-card:hover {
+  opacity: 0.8;
+}
+
+form {
+  font-size: 0.8em;
+  padding: 20px;
+  width: 80dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-inputs-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primarycolor);
+  margin: auto;
+}
+
+fieldset {
+  border-radius: 20px;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  font-weight: bold;
+  background-color: var(--primarycolor);
+  box-shadow: 1px 5px 10px 10px var(--secondarycolor);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0px;
+}
+.input input[type="text"],
+input[type="date"],
+textarea {
+  border-radius: 6px;
+  padding: 10px 8px;
+  min-width: 300px;
+}
+input[type="radio"] {
+  padding: 10px 8px;
+}
+
+.input-col {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
