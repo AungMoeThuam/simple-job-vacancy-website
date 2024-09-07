@@ -1,0 +1,3 @@
+- university assignment project for computing inqury project subject
+- using HTML, CSS only
+- a simple job application website
