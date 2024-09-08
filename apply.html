@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apply</title>
+  <link rel="icon" href="./images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/style1.css" />
 </head>
 
@@ -30,86 +36,130 @@
     </nav>
   </header>
   <main>
-   
-    <fieldset >
-      <legend>Job Application Form</legend>
-      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-        <div class="form-inputs-list">
-         <div>
-           <div class="input">
-             <label for="Job_Reference_Number">Job Reference Number</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
-               placeholder="exactly 5 alphanumeric characters" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">First Name</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
-               placeholder="exactly 5 alphanumeric characters" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Last Name</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
-               placeholder="exactly 5 alphanumeric characters" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Email</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example@example.com" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Phone</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="+60" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Date Of Birth</label>
-             <input type="date" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example@example.com" />
-           </div>
-           <textarea name="Other_skills" id="Other_skills" rows="5" placeholder="other skills"></textarea>
-   
-         </div>
-         <div>
-           <div class="input">
-             <label for="Job_Reference_Number">Gender</label>
-             <div>
-               <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
-                 placeholder="example@example.com" />Male
-               <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
-                 placeholder="example@example.com" />Female
-             </div>
-   
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Street</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example St" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Suburb/Town</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example St" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">State</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example State" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Postcode</label>
-             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="example State" />
-           </div>
-           <div class="input">
-             <label for="Job_Reference_Number">Skill list</label>
-             <div class="input-col">
-              <div>
-               <input type="checkbox" name="skill_list[]" id="skill_list">Programming
-              </div>
-              <div>
-               <input type="checkbox" name="skill_list[]" id="skill_list">Programming
-              </div>
-             </div>
-           </div>
-         </div>
-         </div>
+
+    <!-- <fieldset > -->
+    <!-- <legend>Job Application Form</legend> -->
+     <h1 class="job-title">Job Application Form</h1>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+      <div class="form-inputs-list">
+        <div class="input-name-group">
+          <div class="input">
+            <label for="Job_Reference_Number">First Name</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
+              placeholder="exactly 5 alphanumeric characters" />
+          </div>
+          <div class="input">
+            <label for="Job_Reference_Number">Last Name</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
+              placeholder="exactly 5 alphanumeric characters" />
+          </div>
         </div>
-         <button>Submit</button>
-       </form>
-    </fieldset>
+
+        <div class="input-name-group">
+          <div class="input">
+            <label for="Job_Reference_Number">Email</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
+              placeholder="example@example.com" />
+          </div>
+          <div class="input">
+            <label for="Job_Reference_Number">Phone</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="+60" />
+          </div>
+        </div>
+        <div class="input-name-group">
+          <div class="input">
+            <label for="Job_Reference_Number">Gender</label>
+            <div class="radio-group">
+              <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" />Male
+              <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" />Female
+            </div>
+          </div>
+          <div class="input">
+            <label for="Job_Reference_Number">Date of Birth</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="dd/mm/yyyy" />
+          </div>
+        </div>
+        <div class="input-name-group">
+          <div class="input">
+            <label for="Job_Reference_Number">Steet</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="St.." />
+          </div>
+          <div class="input">
+            <label for="Job_Reference_Number">Suburb/Town</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="Town..." />
+          </div>
+        </div>
+        <div class="input-name-group">
+          <div class="input">
+            <label for="Job_Reference_Number">Postcode</label>
+            <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="0000" />
+          </div>
+          <div class="input">
+            <label for="Job_Reference_Number">State</label>
+            <select name="State" id="State">
+              <option value="" selected>please select</option>
+              <option value="VIC">Victoria (VIC)</option>
+              <option value="NSW">New South Wales (NSW)</option>
+              <option value="QLD">Queensland (QLD)</option>
+              <option value="NT">Northern Territory (NT)</option>
+              <option value="WA">Western Australia (WA)</option>
+              <option value="SA">South Australia (SA)</option>
+              <option value="TAS">Tasmania (TAS)</option>
+              <option value="ACT">Australian Capital Territory (ACT)</option>
+            </select>
+          </div></div>
+          <div class="input-name-group">
+            <div class="input">
+              <label for="Job_Reference_Number">Job Reference Number</label>
+              <input type="text" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" />
+            </div>
+            <div class="input">
+              <label for="Job_Reference_Number">Skill Lists</label>
+              <div class="checkbox-lists">
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Cloud</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Devop</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Backend</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters"  /> <label for="Cloud">Mobile</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Web</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Cyber Security</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="Job_Reference_Number" id="Job_Reference_Number"
+                placeholder="exactly 5 alphanumeric characters" /> <label for="Cloud">Database</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label for="Other_Skills">Other Skills</label>
+            <textarea placeholder="other skills..." name="Other_Skills" id="Other_Skills"></textarea>
+          </div>
+        </div>
+
+
+        <button>Submit</button>
+    </form>
+    <!-- </fieldset> -->
   </main>
   <footer>
     <section>
