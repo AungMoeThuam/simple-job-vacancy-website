@@ -35,12 +35,18 @@
       <a href="/"><button>Login</button></a>
     </nav>
   </header>
-  <main>
+  <main id="apply" class="apply">
 
     <!-- <fieldset > -->
     <!-- <legend>Job Application Form</legend> -->
-     <h1 class="job-title">Job Application Form</h1>
+  
+    <section class="register-photo">
+      <img  src="./images/welcome.svg" alt="">
+      <h2>Welcome! <br>Let's Start the jounrney together!</h2>
+    </section>
+    
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+      <h1>Job Application Form</h1>
       <div class="form-inputs-list">
         <div class="input-name-group">
           <div class="input">
@@ -67,15 +73,15 @@
           </div>
         </div>
         <div class="input-name-group">
-          <div class="input">
-            <label for="Job_Reference_Number">Gender</label>
+          <fieldset class="gender">
+            <legend for="Job_Reference_Number">Gender</legend>
             <div class="radio-group">
               <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
                 placeholder="exactly 5 alphanumeric characters" />Male
               <input type="radio" name="Job_Reference_Number" id="Job_Reference_Number"
                 placeholder="exactly 5 alphanumeric characters" />Female
             </div>
-          </div>
+          </fieldset>
           <div class="input">
             <label for="Job_Reference_Number">Date of Birth</label>
             <input type="text" name="Job_Reference_Number" id="Job_Reference_Number" placeholder="dd/mm/yyyy" />
@@ -161,7 +167,7 @@
     </form>
     <!-- </fieldset> -->
   </main>
-  <footer>
+  <footer class="main-footer">
     <section>
       <h2>Contact us</h2>
       <div class="contacts">
