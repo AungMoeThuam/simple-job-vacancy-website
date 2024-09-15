@@ -6,111 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" href="./images/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style1.css" />
-    <style>
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
 
-        h1,
-        h2 {
-            color: #333;
-        }
-
-        /* Style for the Definition List */
-        dl {
-            margin: 20px 0;
-        }
-
-        dt {
-            width: 150px;
-            float: left;
-            clear: both;
-            font-weight: bold;
-        }
-
-        dd {
-            margin-left: 160px;
-        }
-
-        /* Styling the figure */
-        figure {
-            float: right;
-            width: 200px;
-            border: 2px solid #ddd;
-            /* Single border with shorthand */
-            padding: 10px;
-            margin: 0 0 10px 10px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Styling the table */
-        table {
-            width: 80%;
-            /* Center the table */
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: transparent;
-        }
-
-        th,
-        td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            font-weight: bold;
-            background-color: #f4f4f4;
-            /* Hex color for the table header */
-        }
-
-        td {
-            background-color: #eaeaea;
-            /* Hex color for table cells */
-        }
-
-        /* Styling the email like a definition list */
-        .email-link {
-            display: block;
-            margin-top: 20px;
-        }
-
-        .email-link dt,
-        .email-link dd {
-            display: inline-block;
-        }
-
-        .email-link dt {
-            width: 150px;
-            font-weight: bold;
-        }
-
-        .email-link dd {
-            margin-left: 10px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
+
 
 <body>
     <header>
@@ -128,203 +32,364 @@
                 </li>
                 <li></li>
                 <a href="./apply.html">ApplyNow</a>
+
                 </li>
             </ul>
             <a href="/"><button>Login</button></a>
         </nav>
     </header>
     <main class="about-us">
-        <h1>About Our Group</h1>
-        <section class="container">
-            <h2>Group Information</h2>
-            <dl>
-                <dt>Group Name:</dt>
-                <dd>Team Alpha</dd>
-                <dt>Group ID:</dt>
-                <dd>GA1234</dd>
-                <dt>Tutor’s Name:</dt>
-                <dd>Dr. Jane Smith</dd>
-                <dt>Course:</dt>
-                <dd>Introduction to Web Development</dd>
-            </dl>
+        <section class="group-info">
+            <header>
+                <h1>We are <strong>InspireCode</strong></h1>
+                <p>
+                    We are computer science students studying in Swinburne CS program at INTI Subang.
+                </p>
+            </header>
+            <section class="group-demographic">
+                <section class="group-definition">
+                    <h2>Group Information</h2>
+                    <dl>
+                        <dt>Group Name:</dt>
+                        <dd>Team Alpha</dd>
+                        <dt>Group ID:</dt>
+                        <dd>GA1234</dd>
+                        <dt>Tutor's Name:</dt>
+                        <dd>Dr. Jane Smith</dd>
+                        <dt>Course:</dt>
+                        <dd>Introduction to Web Development</dd>
+                        <dt>Email:</dt>
+                        <dd><a href="mailto:groupemail@example.com">groupemail@example.com</a></dd>
+                    </dl>
+                </section>
 
-            <figure>
-                <img src="group-photo.jpg" alt="Photo of our group">
-                <figcaption>Our Group</figcaption>
-            </figure>
+                <figure class="group-photo">
+                    <img class="group-photo-small" src="./images/teams/team.jpg" alt="Photo of our group">
+                    <figcaption>Our Group</figcaption>
+                </figure>
 
-            <h2>Timetable</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Time</th>
-                        <th>Activity</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>10:00 - 12:00</td>
-                        <td>Lecture</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>14:00 - 16:00</td>
-                        <td>Lab</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>09:00 - 11:00</td>
-                        <td>Workshop</td>
-                    </tr>
-                </tbody>
-            </table>
+            </section>
 
-            <h2>Contact Us</h2>
-            <div class="email-link">
-                <dt>Email:</dt>
-                <dd><a href="mailto:groupemail@example.com">groupemail@example.com</a></dd>
-            </div>
+            <section class="group-table">
+                <h2>Timetable</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>8 AM</th>
+                            <th>9 AM</th>
+                            <th>10 AM</th>
+                            <th>11 AM</th>
+                            <th>12 PM</th>
+                            <th>1 PM</th>
+                            <th>2 PM</th>
+                            <th>3 PM</th>
+                            <th>4 PM</th>
+                            <th>5 PM</th>
+                            <th>6 PM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br><p class="programming">programming</p></td>
+                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br><p class="programming">programming</p></td>
+                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br><p class="computer-system">Computer System</p></td>
+                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br><p class="computer-system">Computer System</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br><p class="networking">Networking</p></td>
+                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br><p class="networking">Networking</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tueday</td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br><p class="math">Math</p></td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br><p class="math">Math</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
+                            <td></td>
+                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br><p class="computer-system">Computer System</p></td>
+                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br><p class="computer-system">Computer System</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td></td>
 
-           
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br><p class="math">Math</p></td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br><p class="math">Math</p></td>
+                            <td></td>
+                            <td></td>
+                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br><p class="programming">programming</p></td>
+                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br><p class="programming">programming</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+ 
+
+
         </section>
-        <h2>Our Team Members</h2>
+
         <section class="members">
-            <div class="member-card">
-                <div class="member-profile">
-                    <img src="./images/teams/aungmoethu.jpg" alt="aungmoethu">
+            <h2>Our Team Members</h2>
+            <article class="member-card">
+                <header>
+                    <!-- User Interests -->
+                    <section class="member-photo">
+                        <img src="./images/teams/aungmoethu.jpg" alt="User Photo">
+                       
+                    </section>
                     <h2>Aung Moe Thu</h2>
-                    <div class="member-socialmedia">
-                        <img src="./images/facebook.png" alt="">
-                        <img src="./images/instagram.png" alt="">
-                    </div>
-                </div>
-                <div class="member-biography">
-                    <h3>Software Engineer</h3>
-                    <div>
-                        <h2>About </h2>
+                    <section class="member-contact">
+                        <h3>About</h3>
                         <ul>
-                            <li>🌱 <strong>I'm currently learning:</strong> Web technologies and machine learning.</li>
-                            <li>💼 <strong>I'm working on:</strong> Backend projects and website enhancements.</li>
-                            <li>🛠️ <strong>My tech stack includes:</strong> React, Express, TypeScript, TailwindCss,
-                                MongoDB, and more.</li>
-                            <li>🎓 <strong>I'm a student with a focus on:</strong> Software development and IT projects.
-                            </li>
+                            <li>email: aungmoethu.2020.edu@gmail.com</li>
+                            <li>phone: +60102906487</li>
+                            <li>nationality: Myanmar</li>
                         </ul>
+                    </section>
+                    <section class="member-social-media">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><img src="./images/facebook.png" alt=""></li>
+                            <li><img src="./images/instagram.png" alt=""></li>
+                            <li><img src="./images/github.png" alt=""></li>
+                        </ul>
+                    </section>
 
-                    </div>
-                    <div class="member-biography-techs">
-                        <h2>Technologies & Tools</h2>
+                    <!-- User Photo -->
+                    <!-- User Demographics -->
+                    
+                </header>
+                <section class="member-body">
+                    <section class="member-hobby">
+                        <h3>Hobby</h3>
                         <ul>
-                            <li><strong>Languages:</strong> JavaScript, TypeScript, Java</li>
-                            <li><strong>Frameworks:</strong> React, Express</li>
-                            <li><strong>Tools:</strong> Nginx, PM2, Git</li>
-                            <li><strong>Databases:</strong> MongoDB, MySQL</li>
-                            <li><strong>Cloud Platforms:</strong> DigitalOcean, AWS</li>
+                            <li>Football</li>
+                            <li>Coding</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="member-card">
-                <div class="member-profile">
-                    <img src="./images/teams/swanyeehtoo.jpeg" alt="aungmoethu">
+                    </section>
+                    <section class="member-learning">
+                        <h3>Tech Experience</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>ExpressJs</li>
+                            <li>ReactJs</li>
+                            <li>TailwindCSS</li>
+                            <li>AWS</li>
+                            <li>Pm2</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Favourite Movies</h3>
+                        
+                            <figure class="member-favourite-movies">
+                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
+                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
+                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
+                            </figure>
+                        
+                    </section>
+                </section>
+
+            </article>
+            <article class="member-card">
+                <header>
+                    <!-- User Interests -->
+                    <section class="member-photo">
+                        <img src="./images/teams/swanyeehtoo.jpeg" alt="User Photo">
+                       
+                    </section>
                     <h2>Swan Yee Htoo</h2>
-                    <div class="member-socialmedia">
-                        <img src="./images/facebook.png" alt="">
-                        <img src="./images/instagram.png" alt="">
-                    </div>
-                </div>
-                <div class="member-biography">
-                    <h3>Cyber Security Expert</h3>
-                    <div>
-                        <h2>About </h2>
+                    <section class="member-contact">
+                        <h3>About</h3>
                         <ul>
-                            <li>🌱 <strong>I'm currently learning:</strong> Web technologies and machine learning.</li>
-                            <li>💼 <strong>I'm working on:</strong> Backend projects and website enhancements.</li>
-                            <li>🛠️ <strong>My tech stack includes:</strong> React, Express, TypeScript, TailwindCss,
-                                MongoDB, and more.</li>
-                            <li>🎓 <strong>I'm a student with a focus on:</strong> Software development and IT projects.
-                            </li>
+                            <li>email: aungmoethu.2020.edu@gmail.com</li>
+                            <li>phone: +60102906487</li>
+                            <li>nationality: Myanmar</li>
                         </ul>
+                    </section>
+                    <section class="member-social-media">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><img src="./images/facebook.png" alt=""></li>
+                            <li><img src="./images/instagram.png" alt=""></li>
+                            <li><img src="./images/github.png" alt=""></li>
+                        </ul>
+                    </section>
 
-                    </div>
-                    <div class="member-biography-techs">
-                        <h2>Technologies & Tools</h2>
+                    <!-- User Photo -->
+                    <!-- User Demographics -->
+                    
+                </header>
+                <section class="member-body">
+                    <section class="member-hobby">
+                        <h3>Hobby</h3>
                         <ul>
-                            <li><strong>Languages:</strong> JavaScript, TypeScript, Java</li>
-                            <li><strong>Frameworks:</strong> React, Express</li>
-                            <li><strong>Tools:</strong> Nginx, PM2, Git</li>
-                            <li><strong>Databases:</strong> MongoDB, MySQL</li>
-                            <li><strong>Cloud Platforms:</strong> DigitalOcean, AWS</li>
+                            <li>Football</li>
+                            <li>Networking</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="member-card">
-                <div class="member-profile">
-                    <img src="./images/teams/khantaungnaing.jpg" alt="aungmoethu">
-                    <h2>Aung Moe Thu</h2>
-                    <div class="member-socialmedia">
-                        <img src="./images/facebook.png" alt="">
-                        <img src="./images/instagram.png" alt="">
-                    </div>
-                </div>
-                <div class="member-biography">
-                    <h3>Software Engineer</h3>
-                    <div>
-                        <h2>About </h2>
+                    </section>
+                    <section class="member-learning">
+                        <h3>Tech Experience</h3>
                         <ul>
-                            <li>🌱 <strong>I'm currently learning:</strong> Web technologies and machine learning.</li>
-                            <li>💼 <strong>I'm working on:</strong> Backend projects and website enhancements.</li>
-                            <li>🛠️ <strong>My tech stack includes:</strong> React, Express, TypeScript, TailwindCss,
-                                MongoDB, and more.</li>
-                            <li>🎓 <strong>I'm a student with a focus on:</strong> Software development and IT projects.
-                            </li>
+                            <li>Wireshark</li>
+                            <li>Linux</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
                         </ul>
+                    </section>
+                    <section>
+                        <h3>Favourite Movies</h3>
+                        
+                            <figure class="member-favourite-movies">
+                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
+                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
+                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
+                            </figure>
+                        
+                    </section>
+                </section>
 
-                    </div>
-                    <div class="member-biography-techs">
-                        <h2>Technologies & Tools</h2>
+            </article>
+            <article class="member-card">
+                <header>
+                    <!-- User Interests -->
+                    <section class="member-photo">
+                        <img src="./images/teams/khantaungnaing.jpg" alt="User Photo">
+                       
+                    </section>
+                    <h2>Khant Aung Naing</h2>
+                    <section class="member-contact">
+                        <h3>About</h3>
                         <ul>
-                            <li><strong>Languages:</strong> JavaScript, TypeScript, Java</li>
-                            <li><strong>Frameworks:</strong> React, Express</li>
-                            <li><strong>Tools:</strong> Nginx, PM2, Git</li>
-                            <li><strong>Databases:</strong> MongoDB, MySQL</li>
-                            <li><strong>Cloud Platforms:</strong> DigitalOcean, AWS</li>
+                            <li>email: aungmoethu.2020.edu@gmail.com</li>
+                            <li>phone: +60102906487</li>
+                            <li>nationality: Myanmar</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                    <section class="member-social-media">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><img src="./images/facebook.png" alt=""></li>
+                            <li><img src="./images/instagram.png" alt=""></li>
+                            <li><img src="./images/github.png" alt=""></li>
+                        </ul>
+                    </section>
+
+                    <!-- User Photo -->
+                    <!-- User Demographics -->
+                    
+                </header>
+                <section class="member-body">
+                    <section class="member-hobby">
+                        <h3>Hobby</h3>
+                        <ul>
+                            <li>Gaming</li>
+                        </ul>
+                    </section>
+                    <section class="member-learning">
+                        <h3>Tech Experience</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Favourite Movies</h3>
+                        
+                            <figure class="member-favourite-movies">
+                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
+                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
+                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
+                            </figure>
+                        
+                    </section>
+                </section>
+
+            </article>
         </section>
-        <h2>Our Offices</h2>
+
         <section class="offices">
-            <div class="office-card">
-                <img src="./images/aboutus/myanmar.jpg" alt="">
-                <div class="office-content">
-                    <h2>Myanmar</h2>
-                    <p>Acient City In Myanmar</p>
+            <header>
+                <h2>Our Offices</h2>
+            </header>
+            <article class="office-card-list">
+                <div class="office-card">
+                    <img src="./images/aboutus/myanmar.jpg" alt="">
+                    <div class="office-content">
+                        <h2>Myanmar</h2>
+                        <p>Acient City In Myanmar</p>
+                    </div>
                 </div>
-            </div>
-            <div class="office-card">
-                <img src="./images/aboutus/malaysia.jpg" alt="">
-                <div class="office-content">
-                    <h2>Malaysia</h2>
-                    <p>Acient City In Myanmar</p>
+                <div class="office-card">
+                    <img src="./images/aboutus/malaysia.jpg" alt="">
+                    <div class="office-content">
+                        <h2>Malaysia</h2>
+                        <p>Acient City In Myanmar</p>
+                    </div>
                 </div>
-            </div>
-            <div class="office-card">
-                <img src="./images/aboutus/thailand.jpg" alt="">
-                <div class="office-content">
-                    <h2>Bagan</h2>
-                    <p>Acient City In Myanmar</p>
+                <div class="office-card">
+                    <img src="./images/aboutus/thailand.jpg" alt="">
+                    <div class="office-content">
+                        <h2>Bagan</h2>
+                        <p>Acient City In Myanmar</p>
+                    </div>
                 </div>
-            </div>
+            </article>
+
 
         </section>
 
     </main>
-    <footer>
+    <footer class="main-footer">
         <section>
             <h2>Contact us</h2>
             <div class="contacts">
