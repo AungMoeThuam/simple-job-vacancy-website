@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" href="./images/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./styles/style1.css" />
 
 </head>
@@ -32,10 +27,34 @@
                 </li>
                 <li></li>
                 <a href="./apply.html">ApplyNow</a>
-
                 </li>
             </ul>
-            <a href="/"><button>Login</button></a>
+            <input type="checkbox" name="toggle-menu-controller" id="toggle-menu-controller">
+            <label id="mobile-menu-close-trigger" for="toggle-menu-controller"></label>
+            <button class="mobile-menu-btn">
+                <label for="toggle-menu-controller">
+                    <img src="./images/menu-icon.svg" alt="">
+                </label>
+            </button>
+            <ul class="mobile-menu">
+                <li>
+                    <label for="toggle-menu-controller">
+                        <img src="./images/menu-close.svg" alt="">
+                    </label>
+                </li>
+                <li>
+                    <a href="./jobs.html">Jobs</a>
+                </li>
+                <li>
+                    <a href="./about.html">about</a>
+                </li>
+                <li>
+                    <a href="./enhancements.html">Enhancements</a>
+                </li>
+                <li></li>
+                <a href="./apply.html">ApplyNow</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main class="about-us">
@@ -64,7 +83,7 @@
                 </section>
 
                 <figure class="group-photo">
-                    <img class="group-photo-small" src="./images/teams/team.jpg" alt="Photo of our group">
+                    <img class="group-photo-small" src="./images/team.jpg" alt="Photo of our group">
                     <figcaption>Our Group</figcaption>
                 </figure>
 
@@ -92,26 +111,46 @@
                     <tbody>
                         <tr>
                             <td>Monday</td>
-                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br><p class="programming">programming</p></td>
-                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br><p class="programming">programming</p></td>
-                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br><p class="computer-system">Computer System</p></td>
-                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br><p class="computer-system">Computer System</p></td>
+                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br>
+                                <p class="programming">programming</p>
+                            </td>
+                            <td class="programming">COS10009 C1<br>G-LT3<br>Lecture<br>
+                                <p class="programming">programming</p>
+                            </td>
+                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br>
+                                <p class="computer-system">Computer System</p>
+                            </td>
+                            <td class="computer-system">COS10004 C1<br>G-LT3<br>Lecture<br>
+                                <p class="computer-system">Computer System</p>
+                            </td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br><p class="networking">Networking</p></td>
-                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br><p class="networking">Networking</p></td>
+                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br>
+                                <p class="networking">Networking</p>
+                            </td>
+                            <td>TNE10006 C2<br>C-L3-DS5&DS6<br>Lecture<br>
+                                <p class="networking">Networking</p>
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>Tueday</td>
-                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br><p class="math">Math</p></td>
-                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br><p class="math">Math</p></td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br>
+                                <p class="math">Math</p>
+                            </td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture<br>
+                                <p class="math">Math</p>
+                            </td>
                             <td></td>
                             <td></td>
-                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br><p class="computing-inqury">Computing Inqury</p></td>
-                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br>
+                                <p class="computing-inqury">Computing Inqury</p>
+                            </td>
+                            <td>COS10026 C1<br>G-R2.5<br>Lecture<br>
+                                <p class="computing-inqury">Computing Inqury</p>
+                            </td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -120,16 +159,30 @@
                         </tr>
                         <tr>
                             <td>Wednesday</td>
-                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
-                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
-                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br><p class="networking">Networking</p></td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br>
+                                <p class="networking">Networking</p>
+                            </td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br>
+                                <p class="networking">Networking</p>
+                            </td>
+                            <td>TNE10006 C2<br>G-Cisco Lab<br>Practical<br>
+                                <p class="networking">Networking</p>
+                            </td>
                             <td></td>
-                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br><p class="computer-system">Computer System</p></td>
-                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br><p class="computer-system">Computer System</p></td>
+                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br>
+                                <p class="computer-system">Computer System</p>
+                            </td>
+                            <td>COS10004 C1<br>A-L4-CSC2<br>Lecture & Practical<br>
+                                <p class="computer-system">Computer System</p>
+                            </td>
                             <td></td>
                             <td></td>
-                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br><p class="computing-inqury">Computing Inqury</p></td>
-                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br><p class="computing-inqury">Computing Inqury</p></td>
+                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br>
+                                <p class="computing-inqury">Computing Inqury</p>
+                            </td>
+                            <td>COS10026 C1<br>A-L4-CSC2<br>Practical<br>
+                                <p class="computing-inqury">Computing Inqury</p>
+                            </td>
                             <td></td>
 
                         </tr>
@@ -139,34 +192,31 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br><p class="math">Math</p></td>
-                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br><p class="math">Math</p></td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br>
+                                <p class="math">Math</p>
+                            </td>
+                            <td>MAT2208 C1<br>G-R2.5<br>Lecture & Tutorial<br>
+                                <p class="math">Math</p>
+                            </td>
                             <td></td>
                             <td></td>
-                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br><p class="programming">programming</p></td>
-                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br><p class="programming">programming</p></td>
+                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br>
+                                <p class="programming">programming</p>
+                            </td>
+                            <td>COS10009 C1<br>C-L2-MAC2<br>Lecture & Practical<br>
+                                <p class="programming">programming</p>
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>Friday</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
+                            <td>no class</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
- 
+
 
 
         </section>
@@ -177,8 +227,8 @@
                 <header>
                     <!-- User Interests -->
                     <section class="member-photo">
-                        <img src="./images/teams/aungmoethu.jpg" alt="User Photo">
-                       
+                        <img src="./images/aungmoethu.jpg" alt="User Photo">
+
                     </section>
                     <h2>Aung Moe Thu</h2>
                     <section class="member-contact">
@@ -192,15 +242,30 @@
                     <section class="member-social-media">
                         <h3>Social Media</h3>
                         <ul>
-                            <li><img src="./images/facebook.png" alt=""></li>
-                            <li><img src="./images/instagram.png" alt=""></li>
-                            <li><img src="./images/github.png" alt=""></li>
+                            <li>
+
+                                <a href="https://www.facebook.com/aungmoethu.benamt/" target="_blank">
+
+                                    <img src="./images/facebook.svg" alt="facebook">
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/aungmoethu_amt/" target="_blank">
+                                    <img src="./images/instagram.png" alt="instagram">
+                                </a>
+
+                            </li>
+                            <li>
+                                    <a href="https://github.com/AungMoeThuam" target="_blank">
+
+
+                                        <img src="./images/github.svg" alt="github">
+                                    </a>
+                            
+                            </li>
                         </ul>
                     </section>
-
-                    <!-- User Photo -->
-                    <!-- User Demographics -->
-                    
                 </header>
                 <section class="member-body">
                     <section class="member-hobby">
@@ -213,29 +278,66 @@
                     <section class="member-learning">
                         <h3>Tech Experience</h3>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>ExpressJs</li>
-                            <li>ReactJs</li>
-                            <li>TailwindCSS</li>
-                            <li>AWS</li>
-                            <li>Pm2</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                            <li>Git</li>
+                            <li>
+                                <img src="./images/HTML5.svg" alt="">
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <img src="./images/CSS3.svg" alt="">
+                                <p>CSS</p>
+                            </li>
+
+                            <li>
+                                <img src="./images/js.svg" alt="">
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <img src="./images/tailwindCSS.svg" alt="">
+                                <p>TailwindCSS</p>
+                            </li>
+                            <li>
+                                <img src="./images/nodejs.svg" alt="">
+                                <p>NodeJs</p>
+                            </li>
+                            <li>
+                                <img src="./images/ts.svg" alt="">
+                                <p>TypeScript</p>
+                            </li>
+                            <li>
+                                <img src="./images/reactjs.svg" alt="">
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <img src="./images/mongoDB.svg" alt="">
+                                <p>MongoDB</p>
+                            </li>
+                            <li>
+                                <img src="./images/mySQL.svg" alt="">
+                                <p>MySQL</p>
+                            </li>
+                            <li>
+                                <img src="./images/express.svg" alt="">
+                                <p>ExpressJs</p>
+                            </li>
+                            <li>
+                                <img src="./images/git.svg" alt="">
+                                <p>Git</p>
+                            </li>
+                            <li>
+                                <img src="./images/linux.svg" alt="">
+                                <p>Linux</p>
+                            </li>
+
                         </ul>
                     </section>
                     <section>
                         <h3>Favourite Movies</h3>
-                        
-                            <figure class="member-favourite-movies">
-                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
-                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
-                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
-                            </figure>
-                        
+                        <figure class="member-favourite-movies">
+                            <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
+                            <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
+                            <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
+                        </figure>
+
                     </section>
                 </section>
 
@@ -244,8 +346,8 @@
                 <header>
                     <!-- User Interests -->
                     <section class="member-photo">
-                        <img src="./images/teams/swanyeehtoo.jpeg" alt="User Photo">
-                       
+                        <img src="./images/swanyeehtoo.jpeg" alt="User Photo">
+
                     </section>
                     <h2>Swan Yee Htoo</h2>
                     <section class="member-contact">
@@ -259,15 +361,15 @@
                     <section class="member-social-media">
                         <h3>Social Media</h3>
                         <ul>
-                            <li><img src="./images/facebook.png" alt=""></li>
+                            <li><img src="./images/facebook.svg" alt=""></li>
                             <li><img src="./images/instagram.png" alt=""></li>
-                            <li><img src="./images/github.png" alt=""></li>
+                            <li><img src="./images/github.svg" alt=""></li>
                         </ul>
                     </section>
 
                     <!-- User Photo -->
                     <!-- User Demographics -->
-                    
+
                 </header>
                 <section class="member-body">
                     <section class="member-hobby">
@@ -280,21 +382,30 @@
                     <section class="member-learning">
                         <h3>Tech Experience</h3>
                         <ul>
-                            <li>Wireshark</li>
-                            <li>Linux</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
+
+                            <li>
+                                <img src="./images/HTML5.svg" alt="">
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <img src="./images/CSS3.svg" alt="">
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <img src="./images/linux.svg" alt="">
+                                <p>Linux</p>
+                            </li>
                         </ul>
                     </section>
                     <section>
                         <h3>Favourite Movies</h3>
-                        
-                            <figure class="member-favourite-movies">
-                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
-                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
-                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
-                            </figure>
-                        
+
+                        <figure class="member-favourite-movies">
+                            <img src="./images/oppenheimer.jpg" alt="oppenheimer">
+                            <img src="./images/3_idiots.jpg" alt="3_idiots">
+                            <img src="./images/the_conjuring.jpg" alt="the_conjuring">
+                        </figure>
+
                     </section>
                 </section>
 
@@ -303,8 +414,8 @@
                 <header>
                     <!-- User Interests -->
                     <section class="member-photo">
-                        <img src="./images/teams/khantaungnaing.jpg" alt="User Photo">
-                       
+                        <img src="./images/khantaungnaing.jpg" alt="User Photo">
+
                     </section>
                     <h2>Khant Aung Naing</h2>
                     <section class="member-contact">
@@ -318,39 +429,51 @@
                     <section class="member-social-media">
                         <h3>Social Media</h3>
                         <ul>
-                            <li><img src="./images/facebook.png" alt=""></li>
+                            <li> <img src="./images/facebook.svg" alt=""></li>
                             <li><img src="./images/instagram.png" alt=""></li>
-                            <li><img src="./images/github.png" alt=""></li>
+
                         </ul>
                     </section>
 
                     <!-- User Photo -->
                     <!-- User Demographics -->
-                    
+
                 </header>
                 <section class="member-body">
                     <section class="member-hobby">
                         <h3>Hobby</h3>
                         <ul>
                             <li>Gaming</li>
+                            <li>Swimming</li>
+                            <li>Football</li>
                         </ul>
                     </section>
                     <section class="member-learning">
                         <h3>Tech Experience</h3>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li>
+                                <img src="./images/Ruby.svg" alt="ruby">
+                                <p>Ruby</p>
+                            </li>
+                            <li>
+                                <img src="./images/HTML5.svg" alt="">
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <img src="./images/CSS3.svg" alt="">
+                                <p>CSS</p>
+                            </li>
                         </ul>
                     </section>
                     <section>
                         <h3>Favourite Movies</h3>
-                        
-                            <figure class="member-favourite-movies">
-                                <img src="./images/aboutus/movies/oppenheimer.jpg" alt="">
-                                <img src="./images/aboutus/movies/3_idiots.jpg" alt="">
-                                <img src="./images/aboutus/movies/the_conjuring.jpg" alt="">
-                            </figure>
-                        
+
+                        <figure class="member-favourite-movies">
+                            <img src="./images/oppenheimer.jpg" alt="">
+                            <img src="./images/3_idiots.jpg" alt="">
+                            <img src="./images/the_conjuring.jpg" alt="">
+                        </figure>
+
                     </section>
                 </section>
 
@@ -359,25 +482,26 @@
 
         <section class="offices">
             <header>
-                <h2>Our Offices</h2>
+                <h2>Our Home Towns</h2>
             </header>
             <article class="office-card-list">
                 <div class="office-card">
-                    <img src="./images/aboutus/myanmar.jpg" alt="">
+                    <img src="./images/yangon.jpg" alt="yangon">
                     <div class="office-content">
-                        <h2>Myanmar</h2>
-                        <p>Acient City In Myanmar</p>
+                        <h2>Yangon</h2>
+                        <p>Capital City In Myanmar</p>
+                    </div>
+                    
+                </div>
+                <div class="office-card">
+                    <img src="./images/sagaing.jpg" alt="sagaing">
+                    <div class="office-content">
+                        <h2>Sagaing</h2>
+                        <p>One of the biggest Cities In Myanmar</p>
                     </div>
                 </div>
                 <div class="office-card">
-                    <img src="./images/aboutus/malaysia.jpg" alt="">
-                    <div class="office-content">
-                        <h2>Malaysia</h2>
-                        <p>Acient City In Myanmar</p>
-                    </div>
-                </div>
-                <div class="office-card">
-                    <img src="./images/aboutus/thailand.jpg" alt="">
+                    <img src="./images/bagan.jpg" alt="bagan">
                     <div class="office-content">
                         <h2>Bagan</h2>
                         <p>Acient City In Myanmar</p>

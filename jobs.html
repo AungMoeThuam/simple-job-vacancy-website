@@ -23,46 +23,63 @@
             <a href="./jobs.html">Jobs</a>
           </li>
           <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./enhancements.html">Enhancements</a>
+          </li>
+          <li></li>
+          <a href="./apply.html">ApplyNow</a>
+          </li>
+        </ul>
+        <input type="checkbox" name="toggle-menu-controller" id="toggle-menu-controller">
+        <label id="mobile-menu-close-trigger" for="toggle-menu-controller"></label>
+        <button class="mobile-menu-btn">
+          <label for="toggle-menu-controller">
+          <img src="./images/menu-icon.svg" alt="">
+        </label>
+        </button>
+        <ul class="mobile-menu">
+          <li>
+          <label for="toggle-menu-controller">
+            <img src="./images/menu-close.svg" alt="">
+          </label>
+          </li>
+          <li>
+            <a href="./jobs.html">Jobs</a>
+          </li>
+          <li>
             <a href="./about.html">about</a>
           </li>
           <li>
             <a href="./enhancements.html">Enhancements</a>
           </li>
-          <li>
-            <a href="./apply.html#apply">ApplyNow</a>
+          <li></li>
+          <a href="./apply.html">ApplyNow</a>
           </li>
         </ul>
-        <a href="/"><button>Login</button></a>
       </nav>
     </header>
     <main class="jobs">
+      <h1>Welcome again, Let's Find Your Job!</h1>
       <aside class="job-list">
         <section class="job-search">
           <input
             type="search"
             name="search"
             id="search"
-            placeholder="enter job position..."
+            placeholder="enter job titile or keyword..."
           />
         </section>
-
-        <div class="position-card">
-          <h3>Database Administrator</h3>
-          <div class="location">
-            <p class="remote">Remote</p>
-            <p class="office">Office</p>
-          </div>
-          <div class="salary">
-            <p>$75,000 - $95,000</p>
-            <a href="#database-administrator">view</a>
-          </div>
-        </div>
 
         <div class="position-card">
           <h3>Cloud Architect</h3>
           <div class="location">
             <p class="remote">Remote</p>
             <p class="office">Office</p>
+          </div>
+          <div class="job-type">
+            <p>Full time</p>
           </div>
           <div class="salary">
             <p>$110,000 - $130,000</p>
@@ -93,72 +110,56 @@
             <a href="#full-stack-developer">view</a>
           </div>
         </div>
-
-        <div class="position-card">
-          <h3>.NET Developer</h3>
-          <div class="location">
-            <p class="remote">Remote</p>
-            <p class="office">Office</p>
-          </div>
-          <div class="salary">
-            <p>$80,000 - $100,000</p>
-            <a href="#net-developer">view</a>
-          </div>
-        </div>
-
-        <div class="position-card">
-          <h3>Application Developer (Mobile)</h3>
-          <div class="location">
-            <p class="remote">Remote</p>
-            <p class="office">Office</p>
-          </div>
-          <div class="salary">
-            <p>$85,000 - $105,000</p>
-            <a href="#mobile-application-developer">view</a>
-          </div>
-        </div>
       </aside>
       <section class="job-detail-list">
-        <div class="job-detail" id="database-administrator">
-          <img src="./images/database-admin.png" alt="Database Administrator" />
-          <h2>Database Administrator</h2>
-          <p><strong>$75,000</strong> - <strong>$95,000</strong></p>
+        <div class="job-detail" id="data-quality-manager">
+          <h2>Data Quality Manager</h2>
+          <p>
+            <strong>$90,000</strong> - <strong>$110,000</strong>
+          </p>
           <div class="location">
             <p class="remote">Remote</p>
             <p class="office">Office</p>
           </div>
-          <p><strong>Reference Number:</strong> DBA02</p>
-          <p><strong>Reports To:</strong> IT Director</p>
+          <div class="job-type">
+            <p>Full time</p>
+          </div>
+          <p><strong>Reference Number:</strong> DQM01</p>
+          <p><strong>Reports To:</strong> Senior Data Scientist</p>
+        
           <div class="job-description">
             <h3>Job Description</h3>
-            <p>
-              Manages databases to ensure performance, security, and data
-              integrity.
-            </p>
-
+            <p>The Data Quality Manager will be responsible for overseeing the quality of data, ensuring accuracy, consistency, and reliability across the company’s databases.</p>
+            
             <h3>Key Responsibilities</h3>
             <ul>
-              <li>Install, configure, and upgrade databases</li>
-              <li>Perform backup and recovery tasks</li>
+              <li>Manage data quality initiatives and ensure adherence to data governance standards</li>
+              <li>Collaborate with IT teams to identify and rectify data quality issues</li>
+              <li>Develop and maintain data quality control processes</li>
+              <li>Train staff on data management best practices</li>
             </ul>
-
+        
             <h3>Qualifications</h3>
             <h4>Essential</h4>
             <ol>
-              <li>Proficiency in SQL, Oracle, MySQL</li>
-              <li>2+ years of database management experience</li>
+              <li>Bachelor's degree in Information Systems, Data Science, or related field</li>
+              <li>5+ years of experience in data management or data quality roles</li>
+              <li>Strong knowledge of data quality frameworks and tools</li>
             </ol>
-
+        
             <h4>Preferable</h4>
             <ol>
-              <li>Experience with cloud database management</li>
+              <li>Experience with data governance tools such as Informatica, Talend, or similar</li>
+              <li>Proficiency in SQL and data analysis techniques</li>
             </ol>
           </div>
+        
           <button>Apply Now</button>
         </div>
+        
+       
 
         <div class="job-detail" id="cloud-architect">
-          <img src="./images/cloud-architect.png" alt="Cloud Architect" />
           <h2>Cloud Architect</h2>
           <p><strong>$110,000</strong> - <strong>$130,000</strong></p>
           <div class="location">
@@ -196,10 +197,7 @@
         </div>
 
         <div class="job-detail" id="mobile-front-end-developer">
-          <img
-            src="./images/mobile-front-end-developer.png"
-            alt="Mobile/Tablet Front-End Developer"
-          />
+         
           <h2>Mobile/Tablet Front-End Developer</h2>
           <p><strong>$85,000</strong> - <strong>$105,000</strong></p>
           <div class="location">
@@ -277,89 +275,9 @@
           <button>Apply Now</button>
         </div>
 
-        <div class="job-detail" id="net-developer">
-          <img src="./images/net-developer.png" alt=".NET Developer" />
-          <h2>.NET Developer</h2>
-          <p><strong>$80,000</strong> - <strong>$100,000</strong></p>
-          <div class="location">
-            <p class="remote">Remote</p>
-            <p class="office">Office</p>
-          </div>
-          <p><strong>Reference Number:</strong> NET01</p>
-          <p><strong>Reports To:</strong> Senior Software Developer</p>
-          <div class="job-description">
-            <h3>Job Description</h3>
-            <p>
-              The .NET Developer is responsible for building and maintaining
-              .NET applications using C# and related technologies.
-            </p>
+        
 
-            <h3>Key Responsibilities</h3>
-            <ul>
-              <li>Develop .NET applications</li>
-              <li>Write clean, scalable code using C#</li>
-              <li>Maintain and improve existing .NET solutions</li>
-            </ul>
-
-            <h3>Qualifications</h3>
-            <h4>Essential</h4>
-            <ol>
-              <li>Bachelor’s degree in Computer Science or related field</li>
-              <li>3+ years of experience in .NET development</li>
-              <li>Proficiency in C#, ASP.NET, and SQL</li>
-            </ol>
-
-            <h4>Preferable</h4>
-            <ol>
-              <li>Experience with cloud-based solutions (Azure)</li>
-              <li>Knowledge of microservices architecture</li>
-            </ol>
-          </div>
-          <button>Apply Now</button>
-        </div>
-
-        <div class="job-detail" id="mobile-application-developer">
-          <img
-            src="./images/mobile-application-developer.png"
-            alt="Mobile Application Developer"
-          />
-          <h2>Application Developer (Mobile)</h2>
-          <p><strong>$85,000</strong> - <strong>$105,000</strong></p>
-          <div class="location">
-            <p class="remote">Remote</p>
-            <p class="office">Office</p>
-          </div>
-          <p><strong>Reference Number:</strong> APP02</p>
-          <p><strong>Reports To:</strong> Mobile Development Lead</p>
-          <div class="job-description">
-            <h3>Job Description</h3>
-            <p>
-              The Application Developer will design, develop, and maintain
-              mobile applications for Android and iOS platforms.
-            </p>
-
-            <h3>Key Responsibilities</h3>
-            <ul>
-              <li>Design and develop mobile applications</li>
-              <li>Maintain and enhance existing apps</li>
-              <li>Work closely with UX/UI teams</li>
-            </ul>
-
-            <h3>Qualifications</h3>
-            <h4>Essential</h4>
-            <ol>
-              <li>3+ years of experience in mobile app development</li>
-              <li>Proficiency in Swift, Kotlin, or Flutter</li>
-            </ol>
-
-            <h4>Preferable</h4>
-            <ol>
-              <li>Experience with cross-platform development</li>
-              <li>Knowledge of mobile testing frameworks</li>
-            </ol>
-          </div>
-          <button>Apply Now</button>
-        </div>
+      
       </section>
     </main>
     <a href="#" class="back-to-start-btn"> Back To Up </a>
