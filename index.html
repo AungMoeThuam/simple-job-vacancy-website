@@ -12,8 +12,11 @@
 <body>
   <header>
     <nav>
-      <a href="/"><img class="logo" src="./images/logo.svg" alt="logo" /></a>
+      <a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo" /></a>
       <ul class="menu">
+        <li>
+          <a class="active" href="./index.html">Home</a>
+        </li>
         <li>
           <a href="./jobs.html">Jobs</a>
         </li>
@@ -23,7 +26,7 @@
         <li>
           <a href="./enhancements.html">Enhancements</a>
         </li>
-        <li></li>
+        <li>
         <a href="./apply.html">ApplyNow</a>
         </li>
       </ul>
@@ -39,6 +42,9 @@
           <label for="toggle-menu-controller">
             <img src="./images/menu-close.svg" alt="">
           </label>
+        </li>
+        <li>
+          <a href="./index.html" class="active">Home</a>
         </li>
         <li>
           <a href="./jobs.html">Jobs</a>
@@ -57,6 +63,10 @@
   </header>
 
   <main class="index">
+    <section class="hero-1">
+      <h1>Empowering businesses with cutting-edge solutions to transform ideas into reality</h1>
+      <button><a href="#services">Discover Our Services</a> </button>
+    </section>
     <section class="hero">
       <div class="hero-title">
         <h1>
@@ -67,14 +77,15 @@
         <p>
           Finding a tech team has never been easier. Whether you are looking
           for a developer, project manager, or designers, Tech for Hire by
-          InspireTube will find you the most suitable candidates for what
+          InspireCode will find you the most suitable candidates for what
           needs to be built.
         </p>
+        <button ><a href="./jobs.html"> Find Jobss</a></button>
       </div>
       <img src="./images/person3.svg" alt="career" />
     
     </section>
-    <section class="product">
+    <section id="services" class="product">
       <h2>Our Services</h2>
       <div class="products">
         <div class="products-card">

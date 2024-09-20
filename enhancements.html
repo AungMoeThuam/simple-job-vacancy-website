@@ -17,8 +17,11 @@
 <body>
   <header>
     <nav>
-      <a href="/"><img class="logo" src="./images/logo.svg" alt="logo" /></a>
+      <a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo" /></a>
       <ul class="menu">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
         <li>
           <a href="./jobs.html">Jobs</a>
         </li>
@@ -26,10 +29,10 @@
           <a href="./about.html">About</a>
         </li>
         <li>
-          <a href="./enhancements.html">Enhancements</a>
+          <a href="./enhancements.html" class="active">Enhancements</a>
         </li>
-        <li></li>
-        <a href="./apply.html">ApplyNow</a>
+        <li>
+          <a href="./apply.html">ApplyNow</a>
         </li>
       </ul>
       <input type="checkbox" name="toggle-menu-controller" id="toggle-menu-controller">
@@ -46,13 +49,16 @@
           </label>
         </li>
         <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
           <a href="./jobs.html">Jobs</a>
         </li>
         <li>
           <a href="./about.html">About</a>
         </li>
         <li>
-          <a href="./enhancements.html">Enhancements</a>
+          <a href="./enhancements.html" class="active">Enhancements</a>
         </li>
         <li></li>
         <a href="./apply.html">ApplyNow</a>
@@ -64,18 +70,64 @@
     <h1>Enhancements</h1>
 
     <section class="enhancement-card">
-      <video src="./images/about-us-record.mov" autoplay muted loop></video>
-      <a href="./about.html">About Page</a>
+        <video src="./images/about-us-record.mov" autoplay muted loop></video>
+       <article class="description">
+
+        <h2>About Us Page Contents Animation</h2>
+        <p>
+          This animation effect was implemented on the content of the About Us page. The content fades in while scaling
+          from a smaller size, creating a dynamic and engaging user experience. This enhances the visual appeal and
+          interactivity of the page. <br><br>
+          How It Goes Beyond Basic Requirements: This feature adds a smooth, professional animation that wasn't covered
+          in the basic lectures or tutorials. While standard transitions were introduced, this animation involves
+          controlling both scale and opacity simultaneously, adding an extra layer of sophistication to the page.
+        </p>
+       </article>
+       <article class="appendix">
+        <a href="./about.html">About-us Page</a>
+        <details>
+          <summary>
+
+            Show Code Implementation
+
+          </summary>
+
+          <article class="code">
+            <img src="./images/about-us-code-1.png" alt="">
+            <img src="./images/about-us-code1.png" alt="">
+          </article>
+        </details>
+        <ul>
+          <li><a href=""></a></li>
+        </ul>
+       </article>
+     
     </section>
     <section class="enhancement-card">
-      <video src="./images/page-record.mov" autoplay muted loop></video>
-      <article>
-        <h3>Page Transition Animation</h3>
-        <p>  
-          This page uses a sliding transition effect to create a smooth and dynamic user experience. The transition is achieved by animating the `clip-path` property, which initially hides the page and gradually reveals it from right to left. As the animation progresses, the content smoothly appears, providing a seamless visual flow between pages. This enhances navigation, making the user interaction feel more fluid and engaging.
+      <h2>Page Transition Animation</h2>
+        <p>
+          Every page uses a sliding transition effect to create a smooth and dynamic user experience. The transition is
+          achieved by animating the `clip-path` property, which initially hides the page and gradually reveals it from
+          left to right. As the animation progresses, the content smoothly appears, providing a seamless visual flow
+          between pages. This enhances navigation, making the user interaction feel more fluid and engaging.
         </p>
         <a href="./index.html">To Index Page</a>
-      </article>
+        <details>
+          <summary>Show Demo</summary>
+          <article>
+            <video src="./images/page-record.mov" autoplay muted loop></video>
+          </article>
+        </details>
+        <details>
+          <summary>
+            Show Code Implementation
+          </summary>
+
+          <article class="code">
+            <img src="./images/about-us-code-1.png" alt="">
+           
+          </article>
+        </details>
     </section>
 
   </main>

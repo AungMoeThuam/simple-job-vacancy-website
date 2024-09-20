@@ -1,0 +1,17 @@
+element {
+  animation: product-card-animation 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+@keyframes product-card-animation {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
